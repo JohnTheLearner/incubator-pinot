@@ -22,6 +22,8 @@
 # docker-pinot
 This is a docker image of [Apache Pinot](https://github.com/apache/incubator-pinot).
 
+Go [here](https://github.com/apache/incubator-pinot/blob/master/thirdeye/docker/README.md) to create and run a ThirdEye docker image.
+
 ## How to build a docker image
 
 There is a docker build script which will build a given Git repo/branch and tag the image.
