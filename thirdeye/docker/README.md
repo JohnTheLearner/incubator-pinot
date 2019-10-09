@@ -1,8 +1,8 @@
 # Build ThirdEye Docker Image
 
-Build a demo image for the [Pinot/ThirdEye project](https://github.com/apache/incubator-pinot/tree/master/thirdeye)
+Build a demo image for the [Pinot/ThirdEye](../README.md) project.
 
-This will be a image containing all dependencies to bring up ThirdEye and run the frontend in demo mode.  The [Dockerfile](https://github.com/apache/incubator-pinot/tree/master/thirdeye/docker/Dockerfile) can be modified for other uses, but these instructions show building an image for easy and reproducible ThirdEye evaluation, development, and testing.
+The constructed image contains all dependencies to bring-up ThirdEye and run the frontend in demo mode.  The [Dockerfile](Dockerfile) can be modified for other uses, but these instructions show building an image for easy and reproducible ThirdEye evaluation, development, and testing.
 
 
 ## Build image:  
@@ -23,7 +23,7 @@ Note that the first run of this will likely take some time as other images and d
 
 ## Run container
 
-Run a ThirdEye container using the below-specified [ephemeral ports](https://en.wikipedia.org/wiki/Ephemeral_port).  This runs the UI and the admin portals from container ports `1426` and `1427` and provides to the host system on ports `51426` and `51427`, respectively.  Host system ports can be changed to user needs, but the container ports are configured in the ThirdEye project.
+Run a ThirdEye container using the below-specified [ephemeral ports](https://en.wikipedia.org/wiki/Ephemeral_port).  This runs the UI and the admin portals from container ports `1426` and `1427` and provides to the host system on ports `51426` and `51427`, respectively.  Host system ports can be changed to user needs, but the application ports are configured in the ThirdEye project.
 
 `docker run -it -p 51426:1426 -p 51427:1427 thirdeye` 
 
