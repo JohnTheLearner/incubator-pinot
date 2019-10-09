@@ -35,7 +35,7 @@ ThirdEye is not a generic dashboard builder toolkit. ThirdEye attempts to bring 
 ## Getting Involved
  
  - Ask questions on [Apache ThirdEye Slack](https://communityinviter.com/apps/apache-thirdeye/apache-thirdeye)
-
+ - Build a demo [ThirdEye Docker image](docker/README.md) for easy and reproducible ThirdEye evaluation and development.
 ## Documentation
 
 Detailed documentation can be found at [ThirdEye documentation](https://thirdeye.readthedocs.io) for a complete description of ThirdEye's features.
