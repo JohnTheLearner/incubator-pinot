@@ -62,8 +62,8 @@ WORKDIR /app
 # TODO:  When merging into master, need to update to the main repo and master branch
 
 RUN git clone https://github.com/JohnTheLearner/incubator-pinot.git \
-  && git checkout add-Docker-containerization-for-ThirdEye \
   && cd incubator-pinot/thirdeye \
+  && git checkout -q -f add-Docker-containerization-for-ThirdEye \
   && chmod +x install.sh run-frontend.sh run-backend.sh reset.sh \
   && cd thirdeye-frontend \
   && npm install
