@@ -57,8 +57,12 @@ COPY settings-docker.xml /usr/share/maven/ref/
 WORKDIR /app
 
 # RUN git clone https://github.com/apache/incubator-pinot.git \
-# use my fork as it's updated to fix the build...
+
+# TODO:  For PR dev, use my fork/branch as it's updated to fix the build...
+# TODO:  When merging into master, need to update to the main repo and master branch
+
 RUN git clone https://github.com/JohnTheLearner/incubator-pinot.git \
+  && git checkout add-Docker-containerization-for-ThirdEye \
   && cd incubator-pinot/thirdeye \
   && chmod +x install.sh run-frontend.sh run-backend.sh reset.sh \
   && cd thirdeye-frontend \
